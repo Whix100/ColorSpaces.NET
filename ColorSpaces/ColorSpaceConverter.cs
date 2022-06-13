@@ -12,7 +12,7 @@ internal static class ColorSpaceConverter
     /// A uint hexadecimal value of the color calculated from <c>red</c>, <c>green</c>, and <c>blue</c>.
     /// </returns>
     internal static uint ConvertRGBToHexadecimal(byte red, byte green, byte blue)
-        => (uint)(red << 16 | green << 8 | blue);
+        => (uint)((red << 16) | (green << 8) | blue);
 
     /// <summary>
     /// Converts the unsigned integer hexadecimal color code to 8-bit red, green, and blue values.

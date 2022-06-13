@@ -17,4 +17,12 @@ public interface IColor : IEquatable<Color>, IEquatable<KnownColor>, IEquatable<
     {
         get;
     }
+
+    /// <summary>
+    /// Alpha transparency value for the current color.
+    /// </summary>
+    public double Alpha
+    {
+        get;
+    }
 }
