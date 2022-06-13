@@ -21,33 +21,22 @@ To obtain the development build of this project, you can clone or download the d
 
 ## Compiling
 You will need the following in order to compile ColorSpaces.NET
-- Visual Studio Code
+- Visual Studio or Visual Studio Code
 - .NET Core SDK
 
 ## Roadmap
-:x: RGB color space support
-
-:x: HSV color space support
-
-:x: CMYK color space support
-
-:x: CMY color space support
-
-:x: HSL color space support
-
-:x: CIEXYZ color space support
-
-:x: CIELab color space support
-
-:x: CIELuv color space support
-
-:x: CIExyY color space support
-
-:x: CIE UCS color space support
-
-:x: ICtCp color space support
-
-:x: TSL color space support
+- [x] RGB color space support
+- [ ] HSV color space support
+- [ ] CMYK color space support
+- [ ] CMY color space support
+- [ ] HSL color space support
+- [ ] CIEXYZ color space support
+- [ ] CIELab color space support
+- [ ] CIELuv color space support
+- [ ] CIExyY color space support
+- [ ] CIE UCS color space support
+- [ ] ICtCp color space support
+- [ ] TSL color space support
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
