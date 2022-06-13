@@ -56,6 +56,12 @@ public struct RGBColor : IColor
         Alpha = alpha;
     }
 
+    public IColor Normalize()
+        => this;
+
+    public RGBColor ConvertToRGBColor()
+        => this;
+
     public override int GetHashCode()
         => (int)Hex;
 
