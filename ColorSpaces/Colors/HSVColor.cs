@@ -55,6 +55,7 @@ public struct HSVColor : IColor
     {
         ErrorUtils.CheckForArgumentOutOfRangeException(saturation, 0, 1, nameof(saturation));
         ErrorUtils.CheckForArgumentOutOfRangeException(value, 0, 1, nameof(value));
+        ErrorUtils.CheckForArgumentOutOfRangeException(alpha, 0, 1, nameof(alpha));
 
         H = hue;
         S = saturation;
