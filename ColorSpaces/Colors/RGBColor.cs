@@ -38,17 +38,18 @@ public struct RGBColor : IColor
     }
 
     /// <summary>
-    /// Initializes a new RGBColor from red, green, and blue. The alpha value is implicitly 255 for full opacity.
+    /// Initializes a new RGBColor from red, green, and blue. The alpha value is implicitly 1 for full opacity.
     /// </summary>
-    /// <param name="red">The red value for the color.</param>
-    /// <param name="green">The green value for the color.</param>
-    /// <param name="blue">The blue value for the color.</param>
-    /// <param name="alpha">The alpha transparency value for the color.</param>
+    /// <param name="red">The red value for the color. (0 to 255)</param>
+    /// <param name="green">The green value for the color. (0 to 255)</param>
+    /// <param name="blue">The blue value for the color. (0 to 255)</param>
+    /// <param name="alpha">The alpha transparency value for the color. (0 to 1)</param>
     public RGBColor(int red, int green, int blue, double alpha = 1)
     {
         ErrorUtils.CheckForArgumentOutOfRangeException(red, 0, 0xFF, nameof(red));
         ErrorUtils.CheckForArgumentOutOfRangeException(green, 0, 0xFF, nameof(green));
         ErrorUtils.CheckForArgumentOutOfRangeException(blue, 0, 0xFF, nameof(blue));
+        ErrorUtils.CheckForArgumentOutOfRangeException(alpha, 0, 1, nameof(alpha));
 
         R = (byte)red;
         G = (byte)green;
